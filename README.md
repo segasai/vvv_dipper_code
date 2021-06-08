@@ -11,7 +11,9 @@ the VVV-WIT-08 object.
 # Usage
 
 After running
+```
 $ make
+```
 to  compile the lc_model_opt.so library you should be able to
 use the lc_model_opt.getlc to compute arbitrary light curves. The description of the arguments of the getlc() method are given in the .cpp file
 
