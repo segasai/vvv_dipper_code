@@ -117,7 +117,7 @@ priorList = [
     UniformPrior(56000 - 200, 56000 + 200),  # t0
     UniformPrior(-6, 1),  # lplx
     UniformPrior(-5, 0),  # transparency
-    UniformPrior(0, 1)
+    UniformPrior(0, 1) # direction of motion parameter 
 ]
 
 
@@ -286,6 +286,7 @@ def like(p, dat, mult=1, getModel=False):
     8) time at starting point (closest approach)
     9) log10 parallax
     10) log10 transparency
+    11) Direction of motion parameter >.5 clockwise < .5 anticlockwise
 
     Arguments:
     p: numpy
